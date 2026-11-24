@@ -1,0 +1,74 @@
+{
+  "id": "maid-lash",
+  "title": "Maid Lash: N°7, Grand Service",
+  "availability": "available",
+  "isNsfw": false,
+  "description": "A hero skin for Lash. He is dressed for service: sailor-collar bodice, layered skirt with white and sky-blue piping, an apron with a red F and a heart, red bows, laced boots, a headdress with ribbons. The whip spool on his back is worth a look from behind. The outfit has cloth that moves, and Lash's abilities, HUD cards, sounds and animations carry the same theme.\n\nIt changes how Lash looks and sounds. It does not change what he does: no stats, no hitbox tricks, no removed effects or audio cues. The skirt is wide, so the pak was checked against Valve's own Lash with the Magician linter (deep, 0 errors); the outline stays inside the limit that tool enforces.\n\n## What you install\n\n- **Maid Lash: N°7, Grand Service** (always installed). Lash skin: outfit, cloth, VFX, HUD art, sounds and animations. Cosmetic only.\n\n## The hero-page scene\n\nThe pose and lighting Lash gets in the hero roster is a scene patch, and a mod source can't run the script that installs it, so DMM installs the skin without it. The skin works on its own. For the scene, download the full zip ([MaidLash_N7-Grand-Service_1.0.0.zip](https://woflo.dev/deadlock-skins/files/MaidLash_N7-Grand-Service_1.0.0.zip), 46 MB), close Deadlock and run `install-scene.cmd` from it (on Linux or Steam Deck, `install-scene.sh`). It builds the scene from your own game files. Turning the mod off in DMM leaves the scene in place; `uninstall-scene.cmd` removes it.\n\n## Not seen yet\n\nSeen working in a real game (build 6864): the outfit from every side, the cloth, death, knockdown and get-up, the slide, mantle, all four abilities (Grapple in flight, Ground Strike, Flog, Death Slam), the gun's fire and reload, and the HUD icons and hero cards. Not yet seen: melee swings, and a long fight with the skin at distance. The sounds were measured against Valve's (effects no louder or longer; voice lines run longer because a short stinger follows his last word) but have not been judged by ear in a match yet.\n\nVersion 1.0.0, built for Deadlock build 6864. Also on [woflo.dev](https://woflo.dev/deadlock-skins/).\n",
+  "descriptionFormat": "markdown",
+  "author": "woflo",
+  "hero": "lash",
+  "contentType": "skins",
+  "tags": [
+    "lash",
+    "skin",
+    "maid",
+    "outfit",
+    "cloth",
+    "vfx",
+    "hud",
+    "sounds",
+    "animations",
+    "hero-page",
+    "cosmetic"
+  ],
+  "images": [
+    "../media/maid-lash/cover.jpg",
+    "../media/maid-lash/lash-front.jpg",
+    "../media/maid-lash/lash-back.jpg",
+    "../media/maid-lash/lash-side.jpg",
+    "../media/maid-lash/lash-apron.jpg"
+  ],
+  "homepageUrl": "https://woflo.dev/deadlock-skins/#maid-lash",
+  "updatedAt": "2026-11-22T12:00:00Z",
+  "release": {
+    "id": "1.0.0-96f19ff3",
+    "contentRevision": "96f19ff3c12e805e1b0598e19ab537a7",
+    "version": "1.0.0",
+    "publishedAt": "2026-11-22T12:00:00Z",
+    "changelog": "1.0.0 (2026-11-22, build b42, Deadlock build 6864)\n\nFirst release.\n\n- The outfit on Lash's own body: a parlourmaid's livery cut like a sailor uniform, a hooped skirt, a looped-up train, lace, bows and laced boots, with cloth on the skirt, train and ribbons.\n- Every ability re-dressed (ribbons, doilies, porcelain, rose petals, a cloche), new HUD cards and ability icons, 86 re-keyed animation clips, and a sound set built from physical models. His voice is untouched.\n- A hero-page scene with its own pose and lighting, installed by script from your own game files.\n- Cosmetic only: hitboxes, silhouette limits and gameplay cues checked against Valve's Lash.",
+    "artifacts": [
+      {
+        "id": "release-zip",
+        "filename": "MaidLash_N7-Grand-Service_1.0.0.zip",
+        "format": "zip",
+        "download": {
+          "url": "../files/MaidLash_N7-Grand-Service_1.0.0.zip"
+        },
+        "size": 45995546,
+        "hashes": {
+          "sha256": "1342d5cd60dbfa9918c86c4d52529dce9d334701c5ab1cc721a500bf97b602a4"
+        }
+      }
+    ],
+    "installation": {
+      "mode": "components",
+      "components": [
+        {
+          "id": "maid-lash",
+          "label": "Maid Lash: N°7, Grand Service",
+          "files": [
+            {
+              "artifactId": "release-zip",
+              "path": "MaidLash_N7-Grand-Service_1.0.0/files/0000-maid-lash/pak10_dir.vpk"
+            }
+          ]
+        }
+      ],
+      "requiredComponents": [
+        "maid-lash"
+      ],
+      "choiceGroups": []
+    }
+  },
+  "releaseHistoryUrl": "./maid-lash/releases.json"
+}

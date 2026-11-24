@@ -1,0 +1,15 @@
+{
+  "snapshotId": "5987932451f38abf",
+  "items": [
+    {
+      "id": "maid-lash",
+      "title": "Maid Lash: N°7, Grand Service",
+      "availability": "available",
+      "isNsfw": false,
+      "hero": "lash",
+      "contentType": "skins",
+      "detailUrl": "./mods/maid-lash.json"
+    }
+  ],
+  "nextUrl": null
+}

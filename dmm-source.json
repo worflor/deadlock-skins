@@ -1,0 +1,28 @@
+{
+  "format": "dmm-source",
+  "protocolVersion": "1.0",
+  "sourceId": "woflo-skins",
+  "name": "woflo's Deadlock skins",
+  "gameId": "deadlock",
+  "catalog": {
+    "kind": "static",
+    "indexUrl": "./catalog.json"
+  },
+  "networkOrigins": {
+    "api": [
+      "https://woflo.dev"
+    ],
+    "downloads": [
+      "https://woflo.dev"
+    ],
+    "media": [
+      "https://woflo.dev"
+    ]
+  },
+  "homepageUrl": "https://woflo.dev/deadlock-skins/",
+  "capabilities": {
+    "search": "local",
+    "releaseHistory": true,
+    "installationChoices": true
+  }
+}

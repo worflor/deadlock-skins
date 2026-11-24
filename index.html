@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>woflo&#x27;s Deadlock skins</title>
+<meta name="description" content="Install with Deadlock Mod Manager: add this source once, get updates in the Mods Store.">
+<meta property="og:title" content="woflo&#x27;s Deadlock skins">
+<meta property="og:image" content="https://woflo.dev/deadlock-skins/media/maid-lash/cover.jpg">
+
+<style>
+:root { --bg: #f6f4ef; --card: #ffffff; --ink: #1d1b18; --muted: #6b665d; --line: #e2ddd3; --accent: #9a3b1f;
+  --accent-ink: #ffffff; --soft: #efe9de; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #15140f; --card: #1f1d17; --ink: #ece7dc; --muted: #a29b8d;
+  --line: #34312a; --accent: #e07a4f; --accent-ink: #15140f; --soft: #2a2720; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 40px 16px 64px; }
+header { margin-bottom: 36px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+h2 { font-size: 1.45rem; line-height: 1.25; margin: 0 0 4px; }
+p { margin: 0 0 12px; }
+a { color: var(--accent); }
+.lede { color: var(--muted); max-width: 62ch; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 16px 0 8px; }
+.btn { display: inline-block; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--card);
+  color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.url { display: block; padding: 10px 12px; border-radius: 8px; background: var(--soft); border: 1px solid var(--line);
+  font: 0.85rem/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace; overflow-wrap: anywhere; user-select: all; }
+.small { font-size: 0.88rem; color: var(--muted); }
+.sum code { overflow-wrap: anywhere; }
+.mod { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 0; background: var(--card);
+  border: 1px solid var(--line); border-radius: 14px; overflow: hidden; margin: 0 0 28px; }
+.mod img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; display: block; background: var(--soft); }
+.body { padding: 22px 24px; }
+.meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+ul { margin: 0 0 12px; padding-left: 20px; }
+li { margin: 0 0 4px; }
+.note { border-left: 3px solid var(--accent); padding: 2px 0 2px 12px; font-size: 0.9rem; color: var(--muted); }
+code { font: 0.85em ui-monospace, "Cascadia Mono", Consolas, monospace; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+footer { margin-top: 40px; font-size: 0.85rem; color: var(--muted); }
+@media (max-width: 720px) { .mod { grid-template-columns: minmax(0, 1fr); } .mod img { min-height: 0; aspect-ratio: 16 / 10; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>woflo&#x27;s Deadlock skins</h1>
+  <p class="lede">Install these with Deadlock Mod Manager: add this source once and its mods show up in DMM's
+  Mods Store, with updates when a new version is out.</p>
+  <div class="row">
+    <a class="btn primary" href="deadlock-mod-manager://sources/add?url=https%3A%2F%2Fwoflo.dev%2Fdeadlock-skins%2Fdmm-source.json">Add source to DMM</a>
+    <a class="btn" href="https://deadlockmods.app/download">Get DMM</a>
+  </div>
+  <p class="small">Needs a DMM version with <strong>Settings &gt; Mods &gt; Mod sources</strong>. If a button does
+  nothing, DMM is not installed, or add the source by hand with this URL:</p>
+  <code class="url">https://woflo.dev/deadlock-skins/dmm-source.json</code>
+</header>
+
+<article class="mod" id="maid-lash">
+  <img src="media/maid-lash/cover.jpg" alt="Maid Lash: N°7, Grand Service" loading="lazy">
+  <div class="body">
+    <h2>Maid Lash: N°7, Grand Service</h2>
+    <div class="meta">Lash &middot; by woflo &middot; version 1.0.0 &middot; 2026-11-22</div>
+    <p>Lash in a maid&#x27;s outfit, with matching kit. Cosmetic only.</p>
+    
+    <div class="row">
+      <a class="btn primary" href="deadlock-mod-manager://sources/install?url=https%3A%2F%2Fwoflo.dev%2Fdeadlock-skins%2Fdmm-source.json&amp;source=woflo-skins&amp;listing=maid-lash">Install with DMM</a>
+      <a class="btn" href="files/MaidLash_N7-Grand-Service_1.0.0.zip" download>Download zip (46 MB)</a> <a class="btn" href="https://woflo.dev/deadlock-skins/">woflo.dev</a>
+    </div>
+    <p class="small sum">SHA-256 <code>1342d5cd60dbfa9918c86c4d52529dce9d334701c5ab1cc721a500bf97b602a4</code></p>
+    <p class="note">The hero-page scene is not installed by DMM (a source can't run scripts). For it, download the zip, close Deadlock and run <code>install-scene.cmd</code> (Linux, Steam Deck: <code>install-scene.sh</code>).</p>
+  </div>
+</article>
+<footer>Every download is a zip you can also install by hand; its README says how.</footer>
+</main>
+</body>
+</html>

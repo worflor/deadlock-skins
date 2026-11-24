@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": "1.0.0-96f19ff3",
+      "contentRevision": "96f19ff3c12e805e1b0598e19ab537a7",
+      "version": "1.0.0",
+      "publishedAt": "2026-11-22T12:00:00Z",
+      "changelog": "1.0.0 (2026-11-22, build b42, Deadlock build 6864)\n\nFirst release.\n\n- The outfit on Lash's own body: a parlourmaid's livery cut like a sailor uniform, a hooped skirt, a looped-up train, lace, bows and laced boots, with cloth on the skirt, train and ribbons.\n- Every ability re-dressed (ribbons, doilies, porcelain, rose petals, a cloche), new HUD cards and ability icons, 86 re-keyed animation clips, and a sound set built from physical models. His voice is untouched.\n- A hero-page scene with its own pose and lighting, installed by script from your own game files.\n- Cosmetic only: hitboxes, silhouette limits and gameplay cues checked against Valve's Lash.",
+      "artifacts": [
+        {
+          "id": "release-zip",
+          "filename": "MaidLash_N7-Grand-Service_1.0.0.zip",
+          "format": "zip",
+          "download": {
+            "url": "../../files/MaidLash_N7-Grand-Service_1.0.0.zip"
+          },
+          "size": 45995546,
+          "hashes": {
+            "sha256": "1342d5cd60dbfa9918c86c4d52529dce9d334701c5ab1cc721a500bf97b602a4"
+          }
+        }
+      ],
+      "installation": {
+        "mode": "components",
+        "components": [
+          {
+            "id": "maid-lash",
+            "label": "Maid Lash: N°7, Grand Service",
+            "files": [
+              {
+                "artifactId": "release-zip",
+                "path": "MaidLash_N7-Grand-Service_1.0.0/files/0000-maid-lash/pak10_dir.vpk"
+              }
+            ]
+          }
+        ],
+        "requiredComponents": [
+          "maid-lash"
+        ],
+        "choiceGroups": []
+      }
+    }
+  ],
+  "nextCursor": null
+}
