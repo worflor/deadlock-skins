@@ -1,6 +1,46 @@
 {
   "items": [
     {
+      "id": "1.0.1-a979c344",
+      "contentRevision": "a979c344f0482194738e8d8a2fc28005",
+      "version": "1.0.1",
+      "publishedAt": "2026-11-24T12:00:00Z",
+      "changelog": "1.0.1 (2026-11-24, build b43, Deadlock build 6865)\n\n- Sharper hero cards and portrait at small sizes.\n- Fixed a cloth texture that shimmered at a distance.\n- Tested on Deadlock build 6865.",
+      "artifacts": [
+        {
+          "id": "release-zip",
+          "filename": "MaidLash_N7-Grand-Service_1.0.1.zip",
+          "format": "zip",
+          "download": {
+            "url": "../../files/MaidLash_N7-Grand-Service_1.0.1.zip"
+          },
+          "size": 46194342,
+          "hashes": {
+            "sha256": "868978c7b6afd86d907582e1de4a80f90e3d2d21bea60ed09191593fc1863b17"
+          }
+        }
+      ],
+      "installation": {
+        "mode": "components",
+        "components": [
+          {
+            "id": "maid-lash",
+            "label": "Maid Lash: N°7, Grand Service",
+            "files": [
+              {
+                "artifactId": "release-zip",
+                "path": "MaidLash_N7-Grand-Service_1.0.1/files/0000-maid-lash/pak10_dir.vpk"
+              }
+            ]
+          }
+        ],
+        "requiredComponents": [
+          "maid-lash"
+        ],
+        "choiceGroups": []
+      }
+    },
+    {
       "id": "1.0.0-96f19ff3",
       "contentRevision": "96f19ff3c12e805e1b0598e19ab537a7",
       "version": "1.0.0",

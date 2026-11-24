@@ -4,7 +4,7 @@ Finished releases of my Deadlock hero skins, hosted as a mod source for Deadlock
 
 **Page and downloads: https://woflo.dev/deadlock-skins/**
 
-- **Maid Lash: N°7, Grand Service** (Lash), version 1.0.0
+- **Maid Lash: N°7, Grand Service** (Lash), version 1.0.1
 
 In a Deadlock Mod Manager version with mod sources (Settings > Mods > Mod sources), add
 `https://woflo.dev/deadlock-skins/dmm-source.json` once to get the skins and their updates in the Mods Store.
