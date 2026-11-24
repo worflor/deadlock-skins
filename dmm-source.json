@@ -20,6 +20,7 @@
     ]
   },
   "homepageUrl": "https://woflo.dev/deadlock-skins/",
+  "iconUrl": "./media/icon.jpg",
   "capabilities": {
     "search": "local",
     "releaseHistory": true,
