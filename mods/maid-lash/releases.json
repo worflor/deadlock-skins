@@ -1,6 +1,46 @@
 {
   "items": [
     {
+      "id": "1.0.2-ac6bb80a",
+      "contentRevision": "ac6bb80adf72cd0c36409fa45c943661",
+      "version": "1.0.2",
+      "publishedAt": "2026-11-25T12:00:00Z",
+      "changelog": "1.0.2 (2026-11-25, build b45, Deadlock build 6868)\n\n- The headdress ribbons move like ribbon in the air: in jumps, Grapple, Death Slam and falls they lift and curl instead of standing up off his head as two stiff blades, and settle back onto his shoulders when he lands.\n- The ribbons lie on the sailor collar instead of sinking into it, and their ends no longer curl back.\n- Tested on Deadlock build 6868.",
+      "artifacts": [
+        {
+          "id": "release-zip",
+          "filename": "MaidLash_N7-Grand-Service_1.0.2.zip",
+          "format": "zip",
+          "download": {
+            "url": "../../files/MaidLash_N7-Grand-Service_1.0.2.zip"
+          },
+          "size": 46193649,
+          "hashes": {
+            "sha256": "01c461542b757f8e289b8345fab26963543de1d3ffbad5eff0e6ebd0f3d7cb34"
+          }
+        }
+      ],
+      "installation": {
+        "mode": "components",
+        "components": [
+          {
+            "id": "maid-lash",
+            "label": "Maid Lash: N°7, Grand Service",
+            "files": [
+              {
+                "artifactId": "release-zip",
+                "path": "MaidLash_N7-Grand-Service_1.0.2/files/0000-maid-lash/pak10_dir.vpk"
+              }
+            ]
+          }
+        ],
+        "requiredComponents": [
+          "maid-lash"
+        ],
+        "choiceGroups": []
+      }
+    },
+    {
       "id": "1.0.1-a979c344",
       "contentRevision": "a979c344f0482194738e8d8a2fc28005",
       "version": "1.0.1",

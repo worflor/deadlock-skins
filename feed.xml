@@ -4,7 +4,19 @@
 <link href="https://woflo.dev/deadlock-skins/"/>
 <link rel="self" href="https://woflo.dev/deadlock-skins/feed.xml"/>
 <id>https://woflo.dev/deadlock-skins/</id>
-<updated>2026-11-24T12:00:00Z</updated>
+<updated>2026-11-25T12:00:00Z</updated>
+<entry>
+<title>Maid Lash: N°7, Grand Service 1.0.2</title>
+<link href="https://woflo.dev/deadlock-skins/maid-lash/"/>
+<id>https://woflo.dev/deadlock-skins/maid-lash/#1.0.2-ac6bb80a</id>
+<updated>2026-11-25T12:00:00Z</updated>
+<author><name>woflo</name></author>
+<content type="text">1.0.2 (2026-11-25, build b45, Deadlock build 6868)
+
+- The headdress ribbons move like ribbon in the air: in jumps, Grapple, Death Slam and falls they lift and curl instead of standing up off his head as two stiff blades, and settle back onto his shoulders when he lands.
+- The ribbons lie on the sailor collar instead of sinking into it, and their ends no longer curl back.
+- Tested on Deadlock build 6868.</content>
+</entry>
 <entry>
 <title>Maid Lash: N°7, Grand Service 1.0.1</title>
 <link href="https://woflo.dev/deadlock-skins/maid-lash/"/>
