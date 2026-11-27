@@ -797,7 +797,12 @@ def pinned_magician():
 
 
 def magician_exe(home):
-    return os.path.join(home, "magician.exe" if sys.platform == "win32" else "magician")
+    """The binary in a release folder, or in a checkout's release build (--magician on a development checkout)."""
+    name = "magician.exe" if sys.platform == "win32" else "magician"
+    for p in (os.path.join(home, name), os.path.join(home, "target", "release", name)):
+        if os.path.isfile(p):
+            return p
+    die(f"no {name} in {home}")
 
 
 # ---------------------------------------------------------------------------------------------------- build
