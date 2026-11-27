@@ -1,0 +1,17 @@
+{
+  "source_id": "woflo-skins",
+  "name": "woflo's Deadlock skins",
+  "base_url": "https://woflo.dev/deadlock-skins/",
+  "repo": "worflor/deadlock-skins",
+  "taxonomy": "taxonomy.json",
+  "page": {
+    "title": "Deadlock skins",
+    "intro": "Hero skins for Deadlock, by woflo. Each one is a whole kit: outfit, cloth, effects, HUD art, animation and sound. Cosmetic only.",
+    "css": "theme/woflo.css",
+    "footer": "theme/footer.html"
+  },
+  "icon": "theme/logo.webp",
+  "authors": {
+    "woflo": "https://woflo.dev/"
+  }
+}

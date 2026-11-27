@@ -1,0 +1,85 @@
+# The two pull-request gates. Both run the base branch's copy of tools/store.py, never the pull request's, so a
+# pull request cannot rewrite the rule it is judged by.
+#
+#   routine-guard  a PR labelled `routine` is the bot's, and adds proofs and compatibility to existing manifests
+#                  and nothing else. On failure it switches auto-merge off, drops the label and asks for review.
+#   merge-gate     a routine PR from the bot needs no review; the maintainer's own PR is reviewed by merging it;
+#                  anything else waits for the maintainer's approval of its newest commit.
+name: pull request
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled, ready_for_review, edited]
+  pull_request_review:
+    types: [submitted, dismissed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  routine-guard:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: The pull request's commits, as data
+        run: git fetch --no-tags origin "${{ github.event.pull_request.head.sha }}"
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+      - name: Guard
+        env:
+          ROUTINE_BOT: ${{ vars.ROUTINE_BOT }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        # The pull request that brings tools/store.py has no base copy of it to be judged by; it is the
+        # maintainer's own and reviewed by hand.
+        run: |
+          if [ ! -f tools/store.py ]; then echo "the base branch has no tools/store.py yet: nothing to guard"; exit 0; fi
+          python tools/store.py guard --base "$BASE" --head "$HEAD" --event "$GITHUB_EVENT_PATH"
+      - name: Not routine after all, so no auto-merge
+        if: failure() && contains(github.event.pull_request.labels.*.name, 'routine')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          MAINTAINER: ${{ vars.MAINTAINER }}
+        run: |
+          gh pr merge --disable-auto "$PR" -R "$GITHUB_REPOSITORY" || true
+          gh pr edit "$PR" -R "$GITHUB_REPOSITORY" --remove-label routine || true
+          [ -n "$MAINTAINER" ] && gh pr edit "$PR" -R "$GITHUB_REPOSITORY" --add-reviewer "$MAINTAINER" || true
+          gh pr comment "$PR" -R "$GITHUB_REPOSITORY" --body "routine-guard: this pull request changes more than proofs and compatibility (the job log says what). Auto-merge is off and the routine label is gone; it waits for review."
+
+  merge-gate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+      - name: Gate
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ROUTINE_BOT: ${{ vars.ROUTINE_BOT }}
+          MAINTAINER: ${{ vars.MAINTAINER }}
+        run: |
+          if [ ! -f tools/store.py ]; then echo "the base branch has no tools/store.py yet: no gate to run"; exit 0; fi
+          python tools/store.py gate --event "$GITHUB_EVENT_PATH"

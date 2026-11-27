@@ -1,0 +1,287 @@
+{
+  "schema": "deadlock-skins.mod/1",
+  "id": "maid-lash",
+  "status": "released",
+  "rights": "cleared",
+  "source": {
+    "repo": "worflor/deadlock-maid-lash",
+    "mod_toml": "model-replacements/maid-lash/mod.toml"
+  },
+  "listing": {
+    "name": "Maid Lash: N°7, Grand Service",
+    "author": "woflo",
+    "hero": "Lash",
+    "hero_id": "lash",
+    "content_type": "skins",
+    "nsfw": false,
+    "description": "Lash in a maid's outfit, with matching kit. Cosmetic only.",
+    "tags": [
+      "lash",
+      "skin",
+      "maid",
+      "outfit",
+      "cloth",
+      "vfx",
+      "hud",
+      "sounds",
+      "animations",
+      "hero-page",
+      "cosmetic"
+    ],
+    "link": "https://woflo.dev/deadlock-skins/",
+    "tagline": "Dinner is served.",
+    "blurb": "Lash, dressed for service: a sailor-collar bodice, a hooped skirt, an apron he embroidered himself, red bows and laced boots. The cloth moves, and his abilities, HUD cards, sounds and animations carry the same theme.",
+    "links": [
+      {
+        "label": "Trailer",
+        "url": "https://youtu.be/N_zcC4oYzOI",
+        "kind": "video"
+      },
+      {
+        "label": "Nexus Mods",
+        "url": "https://www.nexusmods.com/deadlock/mods/20",
+        "kind": "same"
+      }
+    ],
+    "page": "page.html",
+    "sections": [],
+    "preselect": []
+  },
+  "releases": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-22",
+      "build": "b42",
+      "built_for": 6864,
+      "components": [
+        {
+          "id": "maid-lash",
+          "name": "Maid Lash: N°7, Grand Service",
+          "description": "Lash skin: outfit, cloth, VFX, HUD art, sounds and animations. Cosmetic only.",
+          "order": 0,
+          "optional": false,
+          "pak": "files/0000-maid-lash/pak10_dir.vpk",
+          "slot": 10,
+          "sha256": "d67cb5d8ace272cad62c696783d3005836722b1223fad8604eb4979339ef5e47",
+          "size": 110735037
+        }
+      ],
+      "scenes": [
+        "lash"
+      ],
+      "previews": [
+        "cover.jpg",
+        "lash-front.png",
+        "lash-back.png",
+        "lash-side.png",
+        "lash-apron.png"
+      ],
+      "asset": {
+        "tag": "maid-lash-1.0.0",
+        "name": "MaidLash_N7-Grand-Service_1.0.0.zip",
+        "url": "https://github.com/worflor/deadlock-skins/releases/download/maid-lash-1.0.0/MaidLash_N7-Grand-Service_1.0.0.zip",
+        "size": 45995546,
+        "sha256": "1342d5cd60dbfa9918c86c4d52529dce9d334701c5ab1cc721a500bf97b602a4"
+      },
+      "served": "https://woflo.dev/deadlock-skins/files/MaidLash_N7-Grand-Service_1.0.0.zip",
+      "valve_check": {
+        "baseline_build": 6871,
+        "files": 644,
+        "listing_sha256": "5bffece994414451571becda6ec8d95e38c0447269d2982af9a0231233f87502",
+        "identical": 0
+      },
+      "proven_on": [
+        6864
+      ],
+      "pending_on": []
+    },
+    {
+      "version": "1.0.1",
+      "date": "2026-11-24",
+      "build": "b43",
+      "built_for": 6865,
+      "components": [
+        {
+          "id": "maid-lash",
+          "name": "Maid Lash: N°7, Grand Service",
+          "description": "Lash skin: outfit, cloth, VFX, HUD art, sounds and animations. Cosmetic only.",
+          "order": 0,
+          "optional": false,
+          "pak": "files/0000-maid-lash/pak10_dir.vpk",
+          "slot": 10,
+          "sha256": "8fdb0ea4a2a1946190811c18911ba758275b2dc24c7aade0af543cdf10d5cf3c",
+          "size": 111234492
+        }
+      ],
+      "scenes": [
+        "lash"
+      ],
+      "previews": [
+        "cover.jpg",
+        "lash-front.png",
+        "lash-back.png",
+        "lash-side.png",
+        "lash-apron.png"
+      ],
+      "asset": {
+        "tag": "maid-lash-1.0.1",
+        "name": "MaidLash_N7-Grand-Service_1.0.1.zip",
+        "url": "https://github.com/worflor/deadlock-skins/releases/download/maid-lash-1.0.1/MaidLash_N7-Grand-Service_1.0.1.zip",
+        "size": 46194342,
+        "sha256": "868978c7b6afd86d907582e1de4a80f90e3d2d21bea60ed09191593fc1863b17"
+      },
+      "served": "https://woflo.dev/deadlock-skins/files/MaidLash_N7-Grand-Service_1.0.1.zip",
+      "valve_check": {
+        "baseline_build": 6871,
+        "files": 644,
+        "listing_sha256": "c7d559a71f136f432f1196632bb3bfc7a0e88d2a288fa0d8be620f85fbd6ae49",
+        "identical": 0
+      },
+      "proven_on": [
+        6865,
+        6866,
+        6868
+      ],
+      "pending_on": []
+    },
+    {
+      "version": "1.0.2",
+      "date": "2026-11-25",
+      "build": "b45",
+      "built_for": 6868,
+      "components": [
+        {
+          "id": "maid-lash",
+          "name": "Maid Lash: N°7, Grand Service",
+          "description": "Lash skin: outfit, cloth, VFX, HUD art, sounds and animations. Cosmetic only.",
+          "order": 0,
+          "optional": false,
+          "pak": "files/0000-maid-lash/pak10_dir.vpk",
+          "slot": 10,
+          "sha256": "c19e2aca79be00271b555b684d68cf02be59f39aba4da5027f7ab4d1d3033c33",
+          "size": 111233608
+        }
+      ],
+      "scenes": [
+        "lash"
+      ],
+      "previews": [
+        "cover.jpg",
+        "lash-front.png",
+        "lash-back.png",
+        "lash-side.png",
+        "lash-apron.png"
+      ],
+      "asset": {
+        "tag": "maid-lash-1.0.2",
+        "name": "MaidLash_N7-Grand-Service_1.0.2.zip",
+        "url": "https://github.com/worflor/deadlock-skins/releases/download/maid-lash-1.0.2/MaidLash_N7-Grand-Service_1.0.2.zip",
+        "size": 46193649,
+        "sha256": "01c461542b757f8e289b8345fab26963543de1d3ffbad5eff0e6ebd0f3d7cb34"
+      },
+      "served": "https://woflo.dev/deadlock-skins/files/MaidLash_N7-Grand-Service_1.0.2.zip",
+      "valve_check": {
+        "baseline_build": 6871,
+        "files": 644,
+        "listing_sha256": "95b501422ff00b6088a00e07e63f6ae5679de01b17b7e7205659c98576963983",
+        "identical": 0
+      },
+      "proven_on": [
+        6868
+      ],
+      "pending_on": []
+    }
+  ],
+  "proofs": [
+    {
+      "build": 6864,
+      "date": "2026-11-21",
+      "proof": "a6f98cf84f567a6b",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "3a6a5aff",
+      "sha256": "d67cb5d8ace272cad62c696783d3005836722b1223fad8604eb4979339ef5e47",
+      "evidence_sha256": "b728c0a9c3b5ff0be764fc300ea3488d819581d1d3ace940df3278d67ed1a6a3"
+    },
+    {
+      "build": 6865,
+      "date": "2026-11-24",
+      "proof": "ea9d245229b2a0c1",
+      "owner": "lash_showcase",
+      "file": "maps/ui/hero_prefabs/lash.vpk",
+      "crc32": "d287ca64",
+      "sha256": "81f9345a8a8558441816ba799a92c26d1190f7486bfee316d1db8497ad8f2df9",
+      "evidence_sha256": "e043b1ba8fea6621832c4add4845a1904dc8702a327c1615f3fa3f9d16c082ad"
+    },
+    {
+      "build": 6865,
+      "date": "2026-11-24",
+      "proof": "ea9d245229b2a0c1",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "24994007",
+      "sha256": "8fdb0ea4a2a1946190811c18911ba758275b2dc24c7aade0af543cdf10d5cf3c",
+      "evidence_sha256": "e043b1ba8fea6621832c4add4845a1904dc8702a327c1615f3fa3f9d16c082ad"
+    },
+    {
+      "build": 6866,
+      "date": "2026-11-24",
+      "proof": "03abbf6e4c9a86a3",
+      "owner": "lash_showcase",
+      "file": "maps/ui/hero_prefabs/lash.vpk",
+      "crc32": "d287ca64",
+      "sha256": "81f9345a8a8558441816ba799a92c26d1190f7486bfee316d1db8497ad8f2df9",
+      "evidence_sha256": "c0314ba1dd775d2ccff07737765ae4273545981cba88778dc40a6abf40ea8d90"
+    },
+    {
+      "build": 6866,
+      "date": "2026-11-24",
+      "proof": "03abbf6e4c9a86a3",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "24994007",
+      "sha256": "8fdb0ea4a2a1946190811c18911ba758275b2dc24c7aade0af543cdf10d5cf3c",
+      "evidence_sha256": "c0314ba1dd775d2ccff07737765ae4273545981cba88778dc40a6abf40ea8d90"
+    },
+    {
+      "build": 6868,
+      "date": "2026-11-25",
+      "proof": "8f73e996886e464c",
+      "owner": "lash_showcase",
+      "file": "maps/ui/hero_prefabs/lash.vpk",
+      "crc32": "d287ca64",
+      "sha256": "81f9345a8a8558441816ba799a92c26d1190f7486bfee316d1db8497ad8f2df9",
+      "evidence_sha256": "d6091bf58e790070f67d666cfbe663b688f81984a738e8067139f8e0a47829d3"
+    },
+    {
+      "build": 6868,
+      "date": "2026-11-25",
+      "proof": "8f73e996886e464c",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "24994007",
+      "sha256": "8fdb0ea4a2a1946190811c18911ba758275b2dc24c7aade0af543cdf10d5cf3c",
+      "evidence_sha256": "d6091bf58e790070f67d666cfbe663b688f81984a738e8067139f8e0a47829d3"
+    },
+    {
+      "build": 6868,
+      "date": "2026-11-25",
+      "proof": "d55bacaa18141589",
+      "owner": "lash_showcase",
+      "file": "maps/ui/hero_prefabs/lash.vpk",
+      "crc32": "d287ca64",
+      "sha256": "81f9345a8a8558441816ba799a92c26d1190f7486bfee316d1db8497ad8f2df9",
+      "evidence_sha256": "119abcdd6be1427a4a844e6afcd3e11c7115248c537f76a9cfa1632958bfa361"
+    },
+    {
+      "build": 6868,
+      "date": "2026-11-25",
+      "proof": "d55bacaa18141589",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "edfd3beb",
+      "sha256": "c19e2aca79be00271b555b684d68cf02be59f39aba4da5027f7ab4d1d3033c33",
+      "evidence_sha256": "119abcdd6be1427a4a844e6afcd3e11c7115248c537f76a9cfa1632958bfa361"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/worflor/deadlock-skins/main/schema/mod.schema.json",
+  "title": "deadlock-skins.mod/1",
+  "description": "One mod in the store: skins/<id>/manifest.json. docs/manifest.md says what each field means and who may change it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "id", "status", "rights", "source", "listing", "releases", "proofs"],
+  "properties": {
+    "schema": {"const": "deadlock-skins.mod/1"},
+    "id": {"$ref": "#/$defs/id"},
+    "status": {"enum": ["released", "early"]},
+    "rights": {"enum": ["cleared", "unreviewed"]},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "mod_toml"],
+      "properties": {
+        "repo": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+        "mod_toml": {"type": "string", "pattern": "^[A-Za-z0-9_./-]+/mod\\.toml$|^mod\\.toml$"}
+      }
+    },
+    "listing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "author", "hero", "hero_id", "content_type", "nsfw", "description", "tags", "link",
+                   "tagline", "blurb", "links", "page", "sections", "preselect"],
+      "properties": {
+        "name": {"$ref": "#/$defs/text"},
+        "author": {"$ref": "#/$defs/text"},
+        "hero": {"$ref": "#/$defs/text"},
+        "hero_id": {"$ref": "#/$defs/id"},
+        "content_type": {"$ref": "#/$defs/id"},
+        "nsfw": {"type": "boolean"},
+        "description": {"$ref": "#/$defs/text"},
+        "tags": {"type": "array", "maxItems": 100, "items": {"$ref": "#/$defs/text"}},
+        "link": {"$ref": "#/$defs/https"},
+        "tagline": {"type": "string"},
+        "blurb": {"$ref": "#/$defs/text"},
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "url"],
+            "properties": {
+              "label": {"$ref": "#/$defs/text"},
+              "url": {"$ref": "#/$defs/https"},
+              "kind": {"enum": ["same", "video"]}
+            }
+          }
+        },
+        "page": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*\\.(html|md)$"},
+        "sections": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+        "preselect": {"type": "array", "items": {"$ref": "#/$defs/id"}}
+      }
+    },
+    "releases": {
+      "description": "Oldest first. The last one is what the store and the mod manager offer.",
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/release"}
+    },
+    "proofs": {
+      "description": "The public part of the source repository's proofs.tsv: every row of every proof that holds one of these releases' paks.",
+      "type": "array",
+      "items": {"$ref": "#/$defs/proof"}
+    }
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"},
+    "text": {"type": "string", "minLength": 1},
+    "https": {"type": "string", "pattern": "^https://[^\\s?#]+$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "build": {"type": "integer", "minimum": 1},
+    "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "builds": {"type": "array", "items": {"$ref": "#/$defs/build"}},
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "date", "build", "built_for", "components", "scenes", "previews", "asset", "served",
+                   "valve_check", "proven_on", "pending_on"],
+      "properties": {
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "date": {"$ref": "#/$defs/date"},
+        "build": {"type": "string", "pattern": "^[A-Za-z0-9._-]+$"},
+        "built_for": {"$ref": "#/$defs/build"},
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name", "description", "order", "optional", "pak", "slot", "sha256", "size"],
+            "properties": {
+              "id": {"$ref": "#/$defs/id"},
+              "name": {"$ref": "#/$defs/text"},
+              "description": {"$ref": "#/$defs/text"},
+              "order": {"type": "integer", "minimum": 0},
+              "optional": {"type": "boolean"},
+              "pak": {"type": "string", "pattern": "^files/[0-9]{4}-[a-z0-9-]+/pak[0-9]{2}_dir\\.vpk$"},
+              "slot": {"type": "integer", "minimum": 1, "maximum": 99},
+              "sha256": {"$ref": "#/$defs/sha256"},
+              "size": {"type": "integer", "minimum": 1}
+            }
+          }
+        },
+        "scenes": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+        "previews": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[A-Za-z0-9._-]+\\.(png|jpg|jpeg)$"}},
+        "asset": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tag", "name", "url", "size", "sha256"],
+          "properties": {
+            "tag": {"type": "string", "pattern": "^[a-z0-9][a-z0-9.-]*$"},
+            "name": {"type": "string", "pattern": "^[A-Za-z0-9._-]+\\.zip$"},
+            "url": {"$ref": "#/$defs/https"},
+            "size": {"type": "integer", "minimum": 1, "maximum": 2147483648},
+            "sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "served": {"$ref": "#/$defs/https"},
+        "valve_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["baseline_build", "files", "listing_sha256", "identical"],
+          "properties": {
+            "baseline_build": {"$ref": "#/$defs/build"},
+            "files": {"type": "integer", "minimum": 1},
+            "listing_sha256": {"$ref": "#/$defs/sha256"},
+            "identical": {"type": "integer", "minimum": 0}
+          }
+        },
+        "proven_on": {"$ref": "#/$defs/builds"},
+        "pending_on": {"$ref": "#/$defs/builds"}
+      }
+    },
+    "proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["build", "date", "proof", "owner", "file", "crc32", "sha256", "evidence_sha256"],
+      "properties": {
+        "build": {"$ref": "#/$defs/build"},
+        "date": {"$ref": "#/$defs/date"},
+        "proof": {"type": "string", "pattern": "^[0-9a-f]{16}$"},
+        "owner": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+        "file": {"type": "string", "pattern": "^[a-z0-9_./-]+$"},
+        "crc32": {"type": "string", "pattern": "^[0-9a-f]{8}$"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "evidence_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}
