@@ -80,10 +80,11 @@
         "identical": 0
       },
       "proven_on": [
-        6868
+        6868,
+        6875
       ],
       "pending_on": [
-        6871
+        6880
       ]
     }
   ],
@@ -97,6 +98,16 @@
       "crc32": "c4e6ad87",
       "sha256": "eb958dce1eff9b960943542306e190d8ee71a5b4283dcac5bbf7909fd33dd009",
       "evidence_sha256": "e08cd7575f4219cc7281a2d7a612f24d6a1e7dd894cb19fa39c4bf3688e3b4d1"
+    },
+    {
+      "build": 6875,
+      "date": "2026-11-27",
+      "proof": "3e2afe356a7815d8",
+      "owner": "loops_viscous",
+      "file": "pak20_dir.vpk",
+      "crc32": "c4e6ad87",
+      "sha256": "eb958dce1eff9b960943542306e190d8ee71a5b4283dcac5bbf7909fd33dd009",
+      "evidence_sha256": "8ce41c329c5ee3ea7cad0d8f1d2f33d7f1c6682976222c3cf5e61ba572e65e33"
     }
   ]
 }
