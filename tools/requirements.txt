@@ -1,0 +1,4 @@
+# Pillow for the pinned Magician's `source` tool (it writes the store's JPEGs). Installed with --require-hashes.
+pillow==12.3.0 \
+    --hash=sha256:23d27a3e0307ec2244cc51e7287b919aa68d097504ebe19df4e76a98a3eea5bd \
+    --hash=sha256:8e95e1385e4998ae9694eeaa4730ba5457ff61185b3a55e2e7bea0880aef452a

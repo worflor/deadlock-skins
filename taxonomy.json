@@ -1,0 +1,236 @@
+{
+  "format": "dmm-taxonomy",
+  "version": 1,
+  "heroes": [
+    {
+      "id": "abrams",
+      "name": "Abrams"
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo"
+    },
+    {
+      "id": "baba",
+      "name": "Baba"
+    },
+    {
+      "id": "bebop",
+      "name": "Bebop"
+    },
+    {
+      "id": "billy",
+      "name": "Billy"
+    },
+    {
+      "id": "calico",
+      "name": "Calico"
+    },
+    {
+      "id": "celeste",
+      "name": "Celeste"
+    },
+    {
+      "id": "deadman-danny",
+      "name": "Deadman Danny"
+    },
+    {
+      "id": "doorman",
+      "name": "Doorman"
+    },
+    {
+      "id": "drifter",
+      "name": "Drifter"
+    },
+    {
+      "id": "dynamo",
+      "name": "Dynamo"
+    },
+    {
+      "id": "graves",
+      "name": "Graves"
+    },
+    {
+      "id": "grey-talon",
+      "name": "Grey Talon"
+    },
+    {
+      "id": "haze",
+      "name": "Haze"
+    },
+    {
+      "id": "holliday",
+      "name": "Holliday"
+    },
+    {
+      "id": "infernus",
+      "name": "Infernus"
+    },
+    {
+      "id": "ivy",
+      "name": "Ivy"
+    },
+    {
+      "id": "kelvin",
+      "name": "Kelvin"
+    },
+    {
+      "id": "lady-geist",
+      "name": "Lady Geist"
+    },
+    {
+      "id": "lash",
+      "name": "Lash"
+    },
+    {
+      "id": "mcginnis",
+      "name": "McGinnis"
+    },
+    {
+      "id": "mina",
+      "name": "Mina"
+    },
+    {
+      "id": "mirage",
+      "name": "Mirage"
+    },
+    {
+      "id": "mo-and-krill",
+      "name": "Mo & Krill"
+    },
+    {
+      "id": "nurse-harrow",
+      "name": "Nurse Harrow"
+    },
+    {
+      "id": "paige",
+      "name": "Paige"
+    },
+    {
+      "id": "paradox",
+      "name": "Paradox"
+    },
+    {
+      "id": "pocket",
+      "name": "Pocket"
+    },
+    {
+      "id": "rat-king",
+      "name": "Rat King"
+    },
+    {
+      "id": "rem",
+      "name": "Rem"
+    },
+    {
+      "id": "seven",
+      "name": "Seven"
+    },
+    {
+      "id": "shiv",
+      "name": "Shiv"
+    },
+    {
+      "id": "silver",
+      "name": "Silver"
+    },
+    {
+      "id": "sinclair",
+      "name": "Sinclair"
+    },
+    {
+      "id": "solomon",
+      "name": "Solomon"
+    },
+    {
+      "id": "venator",
+      "name": "Venator"
+    },
+    {
+      "id": "victor",
+      "name": "Victor"
+    },
+    {
+      "id": "vindicta",
+      "name": "Vindicta"
+    },
+    {
+      "id": "violet",
+      "name": "Violet"
+    },
+    {
+      "id": "viscous",
+      "name": "Viscous"
+    },
+    {
+      "id": "vyper",
+      "name": "Vyper"
+    },
+    {
+      "id": "warden",
+      "name": "Warden"
+    },
+    {
+      "id": "wraith",
+      "name": "Wraith"
+    },
+    {
+      "id": "wrecker",
+      "name": "Wrecker"
+    },
+    {
+      "id": "yamato",
+      "name": "Yamato"
+    }
+  ],
+  "contentTypes": [
+    {
+      "id": "skins",
+      "name": "Skins"
+    },
+    {
+      "id": "gameplay",
+      "name": "Gameplay"
+    },
+    {
+      "id": "hud",
+      "name": "HUD"
+    },
+    {
+      "id": "models",
+      "name": "Models"
+    },
+    {
+      "id": "music",
+      "name": "Music"
+    },
+    {
+      "id": "maps",
+      "name": "Maps"
+    },
+    {
+      "id": "ability-sounds",
+      "name": "Ability Sounds"
+    },
+    {
+      "id": "weapon-sounds",
+      "name": "Weapon Sounds"
+    },
+    {
+      "id": "voice-lines",
+      "name": "Voice Lines"
+    },
+    {
+      "id": "kill-sounds",
+      "name": "Kill Sounds"
+    },
+    {
+      "id": "killstreak-music",
+      "name": "Killstreak Music"
+    },
+    {
+      "id": "other",
+      "name": "Other"
+    }
+  ]
+}
