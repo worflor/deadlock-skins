@@ -1,0 +1,102 @@
+{
+  "schema": "deadlock-skins.mod/1",
+  "id": "loops-viscous",
+  "status": "early",
+  "rights": "unreviewed",
+  "source": {
+    "repo": "worflor/deadlock-loops-viscous",
+    "mod_toml": "model-replacements/loops-viscous/mod.toml"
+  },
+  "listing": {
+    "name": "Lööps Viscous",
+    "author": "woflo",
+    "hero": "Viscous",
+    "hero_id": "viscous",
+    "content_type": "skins",
+    "nsfw": false,
+    "description": "viscous but milk. cereal included. cat definitely included. A calico in his diving suit, every ability made breakfast, new HUD art and sound. Cosmetic only.",
+    "tags": [
+      "viscous",
+      "skin",
+      "cat",
+      "milk",
+      "cereal",
+      "cloth",
+      "vfx",
+      "hud",
+      "sounds",
+      "animations",
+      "cosmetic"
+    ],
+    "link": "https://woflo.dev/deadlock-skins/",
+    "tagline": "bröther, i have become the lööps.",
+    "blurb": "A fat long-haired calico has got into Viscous's diving suit: her head in the dome, three cereal rings floating just out of reach above her nose. The goo is whole milk, the bones are cereal, the kit is kitchen enamel, the gun fires lööps, and every ability, HUD card and sound is breakfast too.",
+    "links": [],
+    "page": "page.html",
+    "sections": [],
+    "preselect": []
+  },
+  "releases": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-26",
+      "build": "release5",
+      "built_for": 6871,
+      "components": [
+        {
+          "id": "loops-viscous",
+          "name": "Lööps Viscous",
+          "description": "Viscous skin: the cat, milk, kit, dispenser, VFX, HUD art, sounds and animations. Cosmetic only.",
+          "order": 0,
+          "optional": false,
+          "pak": "files/0000-loops-viscous/pak20_dir.vpk",
+          "slot": 20,
+          "sha256": "eb958dce1eff9b960943542306e190d8ee71a5b4283dcac5bbf7909fd33dd009",
+          "size": 62528334
+        }
+      ],
+      "scenes": [],
+      "previews": [
+        "cover.png",
+        "viscous-hero.png",
+        "viscous-puddle-punch.png",
+        "viscous-splatter.png",
+        "viscous-cube.png",
+        "viscous-goo-ball.png",
+        "viscous-hud-portrait.png"
+      ],
+      "asset": {
+        "tag": "loops-viscous-1.0.0",
+        "name": "LoopsViscous_1.0.0.zip",
+        "url": "https://github.com/worflor/deadlock-skins/releases/download/loops-viscous-1.0.0/LoopsViscous_1.0.0.zip",
+        "size": 54248981,
+        "sha256": "c41ff65e182ba2f7734c22db50236c23b39763a9e136ab17614de5e0bde7399c"
+      },
+      "served": "https://woflo.dev/deadlock-skins/files/LoopsViscous_1.0.0.zip",
+      "valve_check": {
+        "baseline_build": 6871,
+        "files": 468,
+        "listing_sha256": "63f6755b4ba12c7bf9aea7e52751c870fcd8f1a6b0d35694e101aba598da6924",
+        "identical": 0
+      },
+      "proven_on": [
+        6868
+      ],
+      "pending_on": [
+        6871
+      ]
+    }
+  ],
+  "proofs": [
+    {
+      "build": 6868,
+      "date": "2026-11-26",
+      "proof": "83c6aeeb122ab011",
+      "owner": "loops_viscous",
+      "file": "pak20_dir.vpk",
+      "crc32": "c4e6ad87",
+      "sha256": "eb958dce1eff9b960943542306e190d8ee71a5b4283dcac5bbf7909fd33dd009",
+      "evidence_sha256": "e08cd7575f4219cc7281a2d7a612f24d6a1e7dd894cb19fa39c4bf3688e3b4d1"
+    }
+  ]
+}
