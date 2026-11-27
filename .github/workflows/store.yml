@@ -31,14 +31,14 @@ jobs:
         with:
           python-version: "3.11"
       - name: Pillow, hash-pinned
-        run: python -m pip install --require-hashes --only-binary :all: -r tools/requirements.txt
+        run: python -m pip install --require-hashes --only-binary ":all:" -r tools/requirements.txt
       - name: Release zips already checked once (each is verified again by sha256)
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
           path: .cache/assets
           key: assets-${{ hashFiles('skins/*/manifest.json') }}
           restore-keys: assets-
-      - name: The pinned Magician (verified against magician.lock.json on every unpack)
+      - name: The pinned Magician (checked against magician.lock.json when it is downloaded)
         uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
           path: .cache/magician
