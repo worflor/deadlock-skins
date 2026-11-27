@@ -857,6 +857,8 @@ def derived_inputs(spec, mods, step, work, assets):
              "tagline": L["tagline"], "blurb": blurb, "links": L["links"], "mod_toml": os.path.join(d, "mod.toml")}
         if not L["tagline"]:
             del e["tagline"]
+        if m["status"] == "early":
+            e["badge"] = "early"  # a pill beside the version, from the Magician release after 0.2.0 (0.2.0 ignores it)
         entries.append(e)
     src = {k: spec[k] for k in ("source_id", "name", "base_url", "authors")}
     src["mods"] = entries
