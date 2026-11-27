@@ -52,7 +52,8 @@ class Problems:
         self.items = []
 
     def add(self, where, msg):
-        self.items.append(f"{where}: {msg}")
+        if f"{where}: {msg}" not in self.items:
+            self.items.append(f"{where}: {msg}")
 
     def __bool__(self):
         return bool(self.items)
@@ -326,7 +327,7 @@ def fetch_asset(spec, r, token, states, assets_dir=None, allow_draft=False):
         shutil.copyfile(os.path.join(assets_dir, a["name"]), path + ".part")
     else:
         if state == "missing":
-            raise RuntimeError(f"no release {a['tag']} on {spec['repo']}")
+            raise RuntimeError(missing_release(a["tag"]))
         if state == "draft" and not allow_draft:
             raise RuntimeError(f"release {a['tag']} is a draft: publish it before the store can serve it")
         if state == "draft":
@@ -345,11 +346,15 @@ def fetch_asset(spec, r, token, states, assets_dir=None, allow_draft=False):
     return path, state
 
 
+def missing_release(tag):
+    return f"no published release {tag} (a draft is invisible without push access: publish it)"
+
+
 def check_asset_record(r, state, rel, problems, where, allow_draft):
     """GitHub's own record of the asset (its size and, for newer uploads, the sha256 it computed) against the
     manifest, so a re-uploaded asset is caught even when the cache holds the old bytes."""
     if state == "missing":
-        problems.add(where, f"no release {r['asset']['tag']}")
+        problems.add(where, missing_release(r["asset"]["tag"]))
         return
     if state == "draft" and not allow_draft:
         problems.add(where, f"release {r['asset']['tag']} is a draft; publish it first")
@@ -1031,8 +1036,7 @@ def cmd_build(args):
     problems = Problems()
     spec = store_spec()
     mods = load_manifests(problems)
-    infos, assets = gather(spec, mods, dict(o, **{"--offline": True}), problems, need_zips=True) if o["--offline"] \
-        else gather(spec, mods, o, problems, need_zips=True)
+    infos, assets = gather(spec, mods, o, problems, need_zips=True)
     if problems:
         report(problems)
     build_site(spec, mods, assets, os.path.abspath(o["--out"]), o["--magician"] or pinned_magician())
