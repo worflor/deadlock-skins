@@ -8,7 +8,8 @@
     "title": "Deadlock skins",
     "intro": "Hero skins for Deadlock, by woflo. Each one is a whole kit: outfit, cloth, effects, HUD art, animation and sound. Cosmetic only.",
     "css": "theme/woflo.css",
-    "footer": "theme/footer.html"
+    "footer": "theme/footer.html",
+    "add_source": {"note": "One click adds every skin here to the mod manager's store. It flags each update."}
   },
   "icon": "theme/logo.webp",
   "authors": {

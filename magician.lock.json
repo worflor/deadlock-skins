@@ -1,9 +1,9 @@
 {
-  "version": "0.2.0",
+  "version": "0.4.0",
   "repo": "worflor/magician",
-  "tag": "v0.2.0",
+  "tag": "v0.4.0",
   "assets": {
-    "linux-x64": {"name": "magician-linux-x64.tar.gz", "sha256": "d48f983fb1be1346161713e081a415fec984b8a31396530f269a5f2f49bc2739"},
-    "windows-x64": {"name": "magician-windows-x64.zip", "sha256": "50569d1a65b34551f7cf4e099e62ba26eeb5017fea35e6a16f3df7be03d93882"}
+    "linux-x64": {"name": "magician-linux-x64.tar.gz", "sha256": "14a1474fd129ea457fccec4d15caf276e343b9b1c09d447a8389c284375cd5f7"},
+    "windows-x64": {"name": "magician-windows-x64.zip", "sha256": "47242b15fa7e3264bc56efd7878cc871727603200e33cba4859716feda14332b"}
   }
 }
