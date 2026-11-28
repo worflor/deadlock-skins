@@ -69,8 +69,8 @@
         "tag": "loops-viscous-1.0.0",
         "name": "LoopsViscous_1.0.0.zip",
         "url": "https://github.com/worflor/deadlock-skins/releases/download/loops-viscous-1.0.0/LoopsViscous_1.0.0.zip",
-        "size": 54248981,
-        "sha256": "c41ff65e182ba2f7734c22db50236c23b39763a9e136ab17614de5e0bde7399c"
+        "size": 54248465,
+        "sha256": "44d32faed824a4d8e8458ed7519b70d672ab9c376f11794a31cf39a8978b0886"
       },
       "served": "https://woflo.dev/deadlock-skins/files/LoopsViscous_1.0.0.zip",
       "valve_check": {
