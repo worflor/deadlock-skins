@@ -1,7 +1,7 @@
 {
   "schema": "deadlock-skins.mod/1",
   "id": "loops-viscous",
-  "status": "early",
+  "status": "released",
   "rights": "cleared",
   "source": {
     "repo": "worflor/deadlock-loops-viscous",
