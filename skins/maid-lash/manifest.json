@@ -187,7 +187,9 @@
         "identical": 0
       },
       "proven_on": [
-        6868
+        6868,
+        6875,
+        6880
       ],
       "pending_on": []
     }
@@ -282,6 +284,46 @@
       "crc32": "edfd3beb",
       "sha256": "c19e2aca79be00271b555b684d68cf02be59f39aba4da5027f7ab4d1d3033c33",
       "evidence_sha256": "119abcdd6be1427a4a844e6afcd3e11c7115248c537f76a9cfa1632958bfa361"
+    },
+    {
+      "build": 6875,
+      "date": "2026-11-27",
+      "proof": "a17144823347444e",
+      "owner": "lash_showcase",
+      "file": "maps/ui/hero_prefabs/lash.vpk",
+      "crc32": "d287ca64",
+      "sha256": "81f9345a8a8558441816ba799a92c26d1190f7486bfee316d1db8497ad8f2df9",
+      "evidence_sha256": "9ba5e2136c3d4e376bd1679a03e219472b88ce57bc2ac107a469a28ded6d480a"
+    },
+    {
+      "build": 6875,
+      "date": "2026-11-27",
+      "proof": "a17144823347444e",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "edfd3beb",
+      "sha256": "c19e2aca79be00271b555b684d68cf02be59f39aba4da5027f7ab4d1d3033c33",
+      "evidence_sha256": "9ba5e2136c3d4e376bd1679a03e219472b88ce57bc2ac107a469a28ded6d480a"
+    },
+    {
+      "build": 6880,
+      "date": "2026-11-27",
+      "proof": "939588d5edfb27c7",
+      "owner": "lash_showcase",
+      "file": "maps/ui/hero_prefabs/lash.vpk",
+      "crc32": "d287ca64",
+      "sha256": "81f9345a8a8558441816ba799a92c26d1190f7486bfee316d1db8497ad8f2df9",
+      "evidence_sha256": "35795873f4fdf69701c77a43db276a59121cc9b07dda20f1d24e81ff6e6edbb0"
+    },
+    {
+      "build": 6880,
+      "date": "2026-11-27",
+      "proof": "939588d5edfb27c7",
+      "owner": "maid_lash",
+      "file": "pak10_dir.vpk",
+      "crc32": "edfd3beb",
+      "sha256": "c19e2aca79be00271b555b684d68cf02be59f39aba4da5027f7ab4d1d3033c33",
+      "evidence_sha256": "35795873f4fdf69701c77a43db276a59121cc9b07dda20f1d24e81ff6e6edbb0"
     }
   ]
 }
